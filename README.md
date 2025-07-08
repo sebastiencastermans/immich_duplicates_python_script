@@ -1,18 +1,46 @@
-# 🧹 Immich Duplicate Cleaner
+# 🧹 Immich Duplicate Cleaner (english, french below)
 
-Script Python pour détecter et supprimer intelligemment les **doublons photo/vidéo** sur un serveur [Immich](https://github.com/immich-app/immich), en **donnant la priorité aux fichiers HEIC (Apple)**.
+Python script to intelligently detect and delete **duplicate photos/videos** on a [Immich](https://github.com/immich-app/immich) server, prioritizing heic (Apple) files over size.
+
+---
+
+## ✨ Main features
+
+- 🔍 Automatic recovery of duplicates via the Immich API
+- 📸 Intelligent file sorting by :
+  1. **Date taken** (`exif.dateTimeOriginal`)
+  2. **Preferred format** : `.heic` in priority
+  3. **File's size** (we keep the largest)
+  4. **Richness of EXIF metadata**
+- 🧪 **Simulation mode** to test without deleting, useful for viewing logs
+- 🗑️ Option to delete to the recycle bin or permanently
+- 📄 Automatic logging to a `.log` file (optional)
+
+---
+
+## ⚙️ Prerequisites
+
+- Immich server operational (self-hosted or public)
+- A valid **API key**
+- Python ≥ 3.7
+
+---
+
+# 🧹 Nettoyeur de doublons Immich (français)
+
+Script Python pour détecter et supprimer intelligemment les **doublons photos/vidéos** sur un serveur [Immich](https://github.com/immich-app/immich), en **donnant la priorité aux fichiers heic (Apple)** par rapport à la taille.
 
 ---
 
 ## ✨ Fonctionnalités principales
 
-- 🔍 Détection automatique des doublons via l’API Immich
+- 🔍 Récupération automatique des doublons via l’API Immich
 - 📸 Tri intelligent des fichiers par :
-  - **Format préféré** : `.HEIC` en priorité
   - **Date de capture** (`exif.dateTimeOriginal`)
+  - **Format préféré** : `.heic` en priorité
   - **Taille du fichier** (on garde le plus lourd)
   - **Richesse des métadonnées EXIF**
-- 🧪 **Mode simulation** pour tester sans supprimer
+- 🧪 **Mode simulation** pour tester sans supprimer, utile pour voir les logs
 - 🗑️ Option de suppression dans la corbeille ou définitive
 - 📄 Journalisation automatique dans un fichier `.log` (optionnelle)
 
