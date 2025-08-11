@@ -52,4 +52,4 @@ Script Python pour détecter et supprimer intelligemment les **doublons photos/v
 - Serveur Immich opérationnel (auto-hébergé ou public)
 - Une **clé API** valide
 - Python ≥ 3.7
-- Module requests, installez-le simplement en exécutant la comment `pip install request` dans le terminal
+- Module requests, installez-le simplement en exécutant la commande `pip install request` dans le terminal
