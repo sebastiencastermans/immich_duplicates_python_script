@@ -23,6 +23,7 @@ Python script to intelligently detect and delete **duplicate photos/videos** on 
 - Immich server operational (self-hosted or public)
 - A valid **API key**
 - Python ≥ 3.7
+- Requests module, simply install it with `pip install requests` in the terminal
 
 ---
 
@@ -51,3 +52,4 @@ Script Python pour détecter et supprimer intelligemment les **doublons photos/v
 - Serveur Immich opérationnel (auto-hébergé ou public)
 - Une **clé API** valide
 - Python ≥ 3.7
+- Module requests, installez-le simplement en exécutant la comment `pip install request` dans le terminal
